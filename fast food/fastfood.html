@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <input type="text" class="orderContent"> <br>
+
+        <button  class="submit">Order</button>
+
+    <script>
+  
+    var submit = document.querySelector(".submit");
+    var content = document.querySelector(".orderContent");
+    submit.addEventListener("click", submitOrder);
+
+    function submitOrder(){
+        var order = content.value
+        console.log("You ordered " + order)
+        content.value = ''
+    };
+   
+   
+    </script>
+
+</body>
+</html>
